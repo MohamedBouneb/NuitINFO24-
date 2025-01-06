@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google reCAPTCHA</title>
+  <link rel="stylesheet" href="pageV.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Passion+One:wght@400;700;900&family=Rubik+Scribble&display=swap" rel="stylesheet">
+</head>
+<body>
+      <!-- Vidéo en arrière-plan -->
+  <video autoplay muted loop id="background-video">
+    <source src="water.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+  
+  <header class="header">
+    <div class="header-left">
+      <!-- Logo and name -->
+      <div class="logo-container">
+        <img src="logo purovsky.png" alt="Purovsky Logo" class="logo">
+        <h2 class="logo-text">Purovsky TEAM!</h2>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- Section pour le jeu -->
+    <section class="game-section">
+      <h1 style="color: black;">Cpatcha : Sauver votre planet</h1>
+      <canvas id="gameCanvas" width="400" height="200"></canvas>
+      <button id="startGame">Vous etes un robot ?</button>
+      <div id="score"></div>
+    </section>
+
+    <!-- Section pour le contenu "About reCAPTCHA" -->
+    <section class="about-section">
+        <h1 >C'est quoi notre idée ?</h1>
+        <p>Protégez votre site avec un captcha basé sur une idée originale.</p>
+        <p>Le principe du captcha est simple : nous avons une carte allant de l'Amérique à l'Europe. L'objectif est de traverser l'océan avec la tortue sans toucher les sacs plastiques. Si vous réussissez, vous serez redirigé vers le site <a href="https://www.viveris.fr/" target="_blank">Viveris</a>. En cas d'échec, un bouton "Rejouer" apparaîtra pour recommencer le captcha.</p>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
